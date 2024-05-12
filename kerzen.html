@@ -1,0 +1,29 @@
+<html>
+
+<head>
+  <header>
+    <meta charset="Iso 8859-15"/>
+  </header>
+  <title>Kerzen ausblasen</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="kerzenausblasen.js"></script>
+  <script>
+    function run() {
+        //alert("Beginne")
+        let anzahlkerzen = 12
+        kerzenausblasen(anzahlkerzen)
+    }
+
+  </script>
+</head>
+
+<body>
+  <img src="vhs-logo.png" width="500" />
+  <p>Bitte Anzahl Kerzen eingeben, dann den button drücken.</p>
+  <form>
+    <input type="text" size="10" id="anzahlkerzen">
+    <button onclick="run();">Kerzen ausblasen</button>
+  </form>
+</body>
+
+</html>
