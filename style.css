@@ -2,16 +2,22 @@ body {
   font-family: Arial, Helvetica, sans-serif
     }
 
+.content {
+  max-width: 500px;
+  margin: auto;
+  background: white;
+  padding: 10px;
+} 
 
-h1 {
-    font-family: Arial;
-    font-size: 32px;
-    color: rgb(128, 75, 0);
-  }
-  
-  p {
-    font-family: Arial;
-    font-size: 16px;
-    color: darkgreen;
-  }
+a:link {
+  text-decoration: none;
+}
+
+ 
+p {
+  padding-top:30px;
+  font-family: Arial;
+  font-size: 16px;
+  color: darkgreen;
+}
   

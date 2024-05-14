@@ -9,21 +9,29 @@
   <script src="kerzenausblasen.js"></script>
   <script>
     function run() {
-        //alert("Beginne")
-        let anzahlkerzen = 12
-        kerzenausblasen(anzahlkerzen)
+        //Aus dem Eingabefeld die Anzahl der Kerzen auslesen
+        let anzahlkerzen = parseInt(document.getElementById("anzahlkerzen").value) 
+        //Aufruf der Funktion kerzenausblasen in kerzenausblasen.js
+        let positionBrennt = kerzenausblasen(anzahlkerzen)
+        //Ergebnis, welche Kerze noch brennt, ausgeben
+        document.getElementById("kerzeBrennt").textContent = positionBrennt.toString();
     }
 
   </script>
 </head>
 
-<body>
+<body class="content">
   <img src="vhs-logo.png" width="500" />
-  <p>Bitte Anzahl Kerzen eingeben, dann den button drücken.</p>
-  <form>
+  <p>Bitte Anzahl Kerzen eingeben, dann "Kerzen ausblasen" drücken.</p>
+  
     <input type="text" size="10" id="anzahlkerzen">
     <button onclick="run();">Kerzen ausblasen</button>
-  </form>
+  
+  <p>
+    Es brennt noch die Kerze an Position: 
+    <span id="kerzeBrennt">??</span>
+  </p>
+  <p>siehe: <a href="https://scratch.mit.edu/projects/1006241790/editor/" target="_new">Lösung in Scratch</a></p>
 </body>
 
 </html>

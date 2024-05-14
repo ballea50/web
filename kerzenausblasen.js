@@ -1,7 +1,9 @@
 function kerzenausblasen(anzahlKerzen)
 {
-    //alert(anzahlKerzen);
+    
     var kerzenZustandsliste = Array(anzahlKerzen);
+    // 1 bedeutet: Kerze brennt
+    // 0 bedeutet: Kerze wurde ausgeblasen
     kerzenZustandsliste.fill(1);
     var brennendeKerzen = anzahlKerzen
     console.log(kerzenZustandsliste);
@@ -10,8 +12,10 @@ function kerzenausblasen(anzahlKerzen)
 
     var z = 0
     var kerzenPosition = 0
+    //Solange noch mehr als 1 Kerze brennt
     while (brennendeKerzen > 1)
     {
+        //Nur brennende Kerzen werden beim Zählen berücksichtigt
         if (kerzenZustandsliste[kerzenPosition] == 1)
             {
                 z = z + 1;
@@ -32,6 +36,9 @@ function kerzenausblasen(anzahlKerzen)
                 kerzenPosition = 0;     
     }
     console.log(kerzenZustandsliste);
-    alert(kerzenZustandsliste)
+   
+    //Welche Kerze brennt noch ?
+    var positionBrennt = kerzenZustandsliste.indexOf(1) + 1;
+    return positionBrennt;
 
 }
