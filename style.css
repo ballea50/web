@@ -7,6 +7,7 @@ body {
   margin: auto;
   background: white;
   padding: 10px;
+  line-height:2
 } 
 
 a:link {
@@ -15,7 +16,7 @@ a:link {
 
  
 p {
-  padding-top:30px;
+  padding-top:10px;
   font-family: Arial;
   font-size: 16px;
   color: darkgreen;
